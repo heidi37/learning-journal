@@ -8,9 +8,17 @@ body {
 navbar
 **********/
 
+nav {
+    height: 3.688rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 nav .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
 }
 
 nav img {
@@ -23,7 +31,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: .5em;
+    margin-left: 2em;
     font-size: 0.75rem;
     font-weight: 600;
 }
@@ -72,6 +80,10 @@ h3 {
     margin-top: 3.125rem;
 }
 
+.second-three-posts{
+    display: none;
+}
+
 /*********
 card
 **********/
@@ -81,6 +93,15 @@ card
     margin-top: 1.5em;
 }
 
+.more {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.more a {
+    color: #000;
+}
+
 /*********
 hero
 **********/
@@ -88,6 +109,7 @@ hero
 .hero {
     background-image: url('../images/blog-image-hero-2x.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
     padding-top: 5.438em;
 }
@@ -136,6 +158,76 @@ footer p {
 
 footer p:first-of-type {
     font-weight: bold;
+}
+
+/*********
+media queries
+**********/
+
+@media(min-width: 768px){
+    nav {
+        height: 5.188rem;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    nav ul li {
+        font-size: 1rem;
+    }
+    .hero {
+       min-height: 35vh; 
+       display:flex;
+       flex-direction: column;
+       justify-content: end;
+    }
+    .hero .container {
+        width: 66vw;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 3em;
+    }
+
+    .first-three-posts, .second-three-posts {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .recent {
+        width: 100%;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+    .card {
+         flex-basis: 27vw;
+    }
+    .card img {
+        margin-top: 0;
+    }
+    .text-container {
+        padding: 0 3em;
+    }
+    .about-header {
+        display: flex;
+        gap: 2em;
+        align-items: start;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 
