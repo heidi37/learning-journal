@@ -14,7 +14,8 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
-nav .container {
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +131,7 @@ article img {
 /*********
 about
 **********/
+
 .headshot {
     width: 11.375rem;
     border-radius: 50%;
@@ -146,7 +148,6 @@ footer
 footer {
     background: #202020;
     color: #ECECEC;
-    /* height: 6.563rem; */
     padding: 2.313rem 0;
     text-align: center;
     font-size: 0.75rem;
@@ -165,21 +166,30 @@ media queries
 **********/
 
 @media(min-width: 768px){
+    body {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
     nav {
         height: 5.188rem;
     }
+
     .navbar-brand {
         font-size: 1.25rem;
     }
+
     nav ul li {
         font-size: 1rem;
     }
+
     .hero {
        min-height: 35vh; 
        display:flex;
        flex-direction: column;
        justify-content: end;
     }
+
     .hero .container {
         width: 66vw;
     }
@@ -190,6 +200,8 @@ media queries
 
     .container {
         padding: 3em;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .first-three-posts, .second-three-posts {
@@ -207,26 +219,42 @@ media queries
     .recent {
         width: 100%;
         margin-bottom: 1em;
-        margin-top: .5em;
+        margin-top: 3em;
     }
+
     .card {
-         flex-basis: 27vw;
+         flex-basis: 31%;
     }
+
     .card img {
         margin-top: 0;
     }
+
     .text-container {
         padding: 0 3em;
     }
+
     .about-header {
         display: flex;
         gap: 2em;
         align-items: start;
+        margin-bottom: 3em;
     }
+
     .intro {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    .intro h1 {
+        margin: 0 0 .25em;
+        line-height: 1.1;
+    }
+
+    .intro p {
+        margin: 0;
     }
 }
 
