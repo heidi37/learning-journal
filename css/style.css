@@ -1,0 +1,141 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*********
+navbar
+**********/
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    margin-right: .25em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: .5em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+nav ul li a{
+    color: #0E0E0E;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #0E0E0E;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
+/*********
+body
+**********/
+
+.container {
+    padding: 1em;
+}
+
+h1 {
+    margin: .5em 0; 
+}
+
+h2 {
+    margin: .563em 0;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.recent {
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+/*********
+card
+**********/
+
+.card img {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+/*********
+hero
+**********/
+
+.hero {
+    background-image: url('../images/blog-image-hero-2x.jpg');
+    background-size: cover;
+    color: white;
+    padding-top: 5.438em;
+}
+
+.hero-link {
+    text-decoration: none;
+}
+
+/*********
+article
+**********/
+
+article img {
+    width: 100%;
+    margin: 1.188em 0;
+}
+
+/*********
+about
+**********/
+.headshot {
+    width: 11.375rem;
+    border-radius: 50%;
+}
+
+.intro {
+    margin-bottom: 3.125em;
+}
+
+/*********
+footer
+**********/
+
+footer {
+    background: #202020;
+    color: #ECECEC;
+    /* height: 6.563rem; */
+    padding: 2.313rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+footer p {
+    margin: 0 0 .25em 0;
+}
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+
